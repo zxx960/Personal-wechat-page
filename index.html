@@ -73,6 +73,44 @@
       color: #9b9b9b;
       font-size: 15px;
     }
+
+    /* 手机端优化：减少顶部留白、卡片更贴屏幕、二维码略缩小 */
+    @media (max-width: 480px) {
+      body {
+        min-height: auto;
+        align-items: start;
+        justify-items: center;
+        padding: 12px;
+      }
+
+      .card {
+        width: 100%;
+        border-radius: 16px;
+        padding: 24px 16px 18px;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        margin: 8px 0 16px;
+      }
+
+      .name {
+        margin-bottom: 16px;
+      }
+
+      .qr-wrap {
+        width: min(100%, 300px);
+        padding: 8px;
+      }
+
+      .tip {
+        margin-top: 14px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
