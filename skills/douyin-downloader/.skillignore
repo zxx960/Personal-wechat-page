@@ -1,6 +1,0 @@
-# Ignore test files and downloads
-test/
-downloads/
-*.mp4
-*.mov
-.DS_Store
